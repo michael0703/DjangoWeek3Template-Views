@@ -9,7 +9,24 @@ html, body {
     }
 */
     
-        
+
+    #ta {
+        /*color:red;*/
+        font-size: 110%;
+        text-indent: 100px;
+        text-align: center;
+    }
+
+    #ps{
+        color:red;
+    }
+
+    h1,h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+
     #container {
         top: 50px;
         width: 800px;
@@ -17,11 +34,13 @@ html, body {
         margin: 0 auto;
         display: block;
         position: relative;
+        /*border-style: double;*/
+        border-width: thin; 
         /*background-color: #FFF;*/
         /*margin: 30px 50px 30px 50px;*/
         /*border: 2px solid #00A;*/
     }
- 
+
     #status-box {
         text-align: right;
         font-size: .6em;
@@ -44,8 +63,14 @@ html, body {
         display: inline-block;
     }
  
+
+    #name, #msg, #submit{
+        margin: 10px;
+        font-size: 15px;
+    }
     input[name="name"] {
-        width: 5%;
+        width: 10%;
+        /*height: 10%;*/
     }
  
     input[name="msg"] {
@@ -69,10 +94,11 @@ html, body {
  
     .msg > span::before {
         color: darkred;
-        content: " { ";
+        content: " [ ";
     } 
  
     .msg > span::after {
         color: darkred;
-        content: " } ";
+        content: " ]   : ";
+        size: 100%;
     }        
