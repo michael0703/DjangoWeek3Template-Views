@@ -8,23 +8,20 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Hi大家，這是第二週的陽春範例。</h1>
-    <h2>第二週需要學的是html跟css基礎<br>
-        網路上有很多教學，也有很多模板～<br>
+    <h1>Hi大家，這是第三週的陽春範例。</h1>
+    <h2>第二週需要學的是template跟views的互動<br>
+        有時候你不會想要一個一個打完所有的東西....<br>
+        像下面的範例ＸＤ這時候如何寫for就很重要了～～<br>
         大家加油！<br>
     </h2>
     <p id="ta">by助教<br></p>
     <div id="container">
         <div id="content">
-            <div class="msg">
-                <span class="name">Pecu</span>
-                Hello,Class!
-
-            </div>
-            <div class="msg">
-                <span class="name">Michael</span>
-                Hello,Pecu.
-            </div>
+            {% for msg in msgs %}
+                <div class="msg">
+                    <span>助教</span><br>{{msg}}
+                </div>
+            {% endfor %}
         </div>
         <div id="send-box">
             <form id="send-form">

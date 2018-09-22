@@ -99,6 +99,6 @@ html, body {
  
     .msg > span::after {
         color: darkred;
-        content: " ]   : ";
-        size: 100%;
+        content: " ] ";
+        size: 70%;
     }        

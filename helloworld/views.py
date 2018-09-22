@@ -6,4 +6,6 @@ from django.contrib.auth.models import User
 
 
 def index(request):
-	return render(request, 'guestbookver1.html')
+	default_msg = "你能夠一次打這麼多個html tag嗎？ 我猜不行，試試看寫迴圈吧!"
+	msgs = [default_msg for i in range(len(default_msg))]
+	return render(request, 'guestbookver1.html', locals())
